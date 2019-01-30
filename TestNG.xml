@@ -1,0 +1,34 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite" verbose="1" >
+    <listeners>
+        <listener class-name="Begin.listeners"/>
+        <listener class-name="resources.ExtentReporterNG"/>
+    </listeners>
+    <test name="Validate Logo">
+        <classes>
+            <class name="Begin.validateLogoTest"/>
+        </classes>
+    </test>
+    <test name="Validating user login" >
+        <classes>
+            <class name="Begin.LoginTest"/>
+        </classes>
+    </test>
+    <test name="Validating cart functionality">
+        <classes>
+            <class name="Begin.cartTest"/>
+        </classes>
+    </test>
+    <test name="Validating signup functionality">
+        <classes>
+            <class name="Begin.signupTest"/>
+        </classes>
+    </test>
+    <test name="Checking for all the broken links">
+        <classes>
+            <class name="Begin.brokenlinkTest"/>
+        </classes>
+    </test>
+
+</suite>
